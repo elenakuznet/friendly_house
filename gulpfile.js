@@ -1,8 +1,12 @@
 import gulp from 'gulp';
-import browserSync from 'browser-sync';
+import browserSync, { reset } from 'browser-sync';
 import cssImport from 'gulp-cssimport';
 import gulpCssimport from 'gulp-cssimport';
-import * as del from 'del';
+import pkg from "del";
+// import * as del from 'del';
+// import del from "del";
+
+// const {deleteAsync} = pkg;
 
 export const html = () => gulp
     .src('src/*.html')
@@ -51,8 +55,11 @@ export const server = () => {
     gulp.watch(['./src/image/**/*', '.src/fonts/**/*'], copy)
 };
 
+export const clear = () => {
+    return pkg(['dist'])
+}
 
-export const clear = () => del('dist/**/*', {forse: true},);
+// export const clear = () => del('dist/**/*', {forse: true});
 
 
 //запуск 

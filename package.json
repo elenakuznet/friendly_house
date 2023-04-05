@@ -11,7 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.29.1",
-    "del": "^7.0.0",
+    "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-cssimport": "^7.0.0"
   }
