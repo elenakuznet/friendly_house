@@ -1,0 +1,38 @@
+.banner {
+    padding-top: 0;
+    padding-bottom: 90px;
+}
+
+.banner__wrapper {
+    display: grid;
+    grid-template-areas: 
+    'one two'
+    'three two';
+    justify-content: end;
+    align-items: end;
+}
+
+.banner__content {
+    max-width: 480px;
+    grid-area: one;
+}
+
+.banner__text {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.orange {
+    color: #FF8A00;
+}
+
+.banner__link {
+    justify-self: left;
+    grid-area: three;
+    background-color: transparent;
+}
+
+.banner__image {
+    grid-area: two;
+}

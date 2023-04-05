@@ -1,0 +1,58 @@
+.menu {
+    display: none;
+    
+    /* position: relative;
+    z-index: 100; */
+    
+    position: absolute;
+    top: 120px;
+}
+
+
+.menu__overlay {
+    position: fixed;
+    inset: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.menu__nav {
+    position: relative;
+    max-width: 394px;
+    background-color: #F2F0F1;
+    border-bottom: 10px solid #FF8A00;
+}
+
+.menu__list {
+    padding: 55.5px 40px 24.5px 20px;
+}
+
+.menu__item {
+    padding: 15px 0;
+    border-bottom: 1px solid #FF8A00;
+}
+
+.menu__item:last-child {
+    border-bottom: none;
+}
+
+.menu__link {
+    font-style: normal;
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 30px;
+    
+}
+
+.triangle {
+    width: 52px;
+    height: 30px;
+    background-image: url('../image/menu/Polygon.svg');
+    position: absolute;
+    top: -27px;
+    left: 0;
+    z-index: 0;
+}
+
+/* не работает z-index */
+

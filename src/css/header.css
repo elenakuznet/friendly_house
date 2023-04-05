@@ -1,0 +1,27 @@
+.header {
+    position: relative;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 0 27px 0;
+}
+
+.header__burger {
+}
+
+.header__logo {
+}
+
+.header__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 30px;
+    color: #282626;
+}

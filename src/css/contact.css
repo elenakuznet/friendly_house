@@ -1,0 +1,131 @@
+.contact {
+    /* max-width: 780px; 
+    margin: 0 auto; */
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background: #fff;
+}
+
+.contact__container {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.contact__wrapper {
+    padding: 50px 100px;
+    background: #f2f0f1;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.contact__title {
+    margin-bottom: 30px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: #ff8a00;
+}
+
+.contact__text {
+    margin-bottom: 15px;
+}
+
+.contact__address {
+    font-style: normal;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact__text_color_orange {
+    color: #ff8a00;
+}
+
+.contact__subtitle {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 24px;
+    color: #282626;
+}
+
+.contact__mobile {
+    margin-bottom: 10px;
+}
+
+.contact__mobile::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url('../image/call.svg');
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 14px;
+}
+
+.contact__email::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url('../image/email.svg');
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 14px;
+}
+
+.contact__form {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* display: block; */
+}
+
+.form__label {
+    text-align: left;
+    display: block;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 117% ;
+    color: #282626;
+}
+
+.form__wrapper {
+    margin-bottom: 35px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.form__input {
+    display: block;
+    padding: 5px;
+    margin: 2px auto;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #fff;
+    border: none;
+    min-width: 280px;
+}
+
+.mobile {
+    margin-bottom: 20px;
+}
+
+.form__button {
+    align-self: flex-end;
+    border: 0;
+}
