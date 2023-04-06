@@ -3,10 +3,11 @@ import browserSync, { reset } from 'browser-sync';
 import cssImport from 'gulp-cssimport';
 import gulpCssimport from 'gulp-cssimport';
 import pkg from "del";
+
 // import * as del from 'del';
 // import del from "del";
-
 // const {deleteAsync} = pkg;
+
 
 export const html = () => gulp
     .src('src/*.html')
