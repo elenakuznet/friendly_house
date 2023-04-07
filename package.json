@@ -5,10 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Elena Kuznetsova",
   "license": "ISC",
+  "homepage": "https://elenakuznet.github.io/friendly_house",
   "devDependencies": {
     "browser-sync": "^2.29.1",
     "del": "^6.1.1",
