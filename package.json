@@ -15,7 +15,9 @@
     "del": "^6.1.1",
     "gh-pages": "^5.0.0",
     "gulp": "^4.0.2",
-    "gulp-cssimport": "^7.0.0"
+    "gulp-cssimport": "^7.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.61.0"
   },
   "keywords": []
 }
