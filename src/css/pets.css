@@ -1,160 +1,94 @@
 .pets {
-    padding: 50px 0;
+  padding: 90px 0 0 0;
 }
-
 .pets__title {
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 60px;
-    margin-bottom: 50px;
-}
-
-.gallery__figure {
-    margin: 0;
-    display: inline-block;
-    max-width: initial;
-}
-
-.gallery__image {
-    max-width: 100%;
-    object-position: center;
-    object-fit: cover;
-    flex: 1 0 auto;
-    width: 100%;
-    height: auto;
-}
-
-.gallery__caption {
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 26px;
-    max-height: 23px;
+  margin-bottom: 50px;
 }
 
 .gallery {
-    display: grid;
-    column-gap: 20px;
-    row-gap: 48px;
-    max-height: 722px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-areas: 
-    "one one one one one two two two six six six six"
-    "three three three four four four five five six six six six";
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: "one one one one one two two two six six six six" "three three three four four four five five six six six six";
+  grid-template-rows: 326px 352px;
+  column-gap: 20px;
+  row-gap: 44px;
+}
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  flex: 1 0 auto;
+}
+.gallery__figure {
+  margin: 0;
+  display: inline-block;
+  max-width: initial;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.gallery__caption {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .one {
-    grid-area: one;
+  grid-area: one;
 }
 
 .two {
-    grid-area: two;
+  grid-area: two;
 }
 
 .three {
-    grid-area: three;
+  grid-area: three;
 }
 
 .four {
-    grid-area: four;
+  grid-area: four;
 }
 
 .five {
-    grid-area: five;
+  grid-area: five;
 }
 
 .six {
-    grid-area: six;
+  grid-area: six;
 }
 
-.gallery__figure {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.pinki {
+  max-height: 280px;
+}
+
+.murzik {
+  max-height: 280px;
+}
+
+.jack {
+  max-height: 280px;
+}
+
+.jerry {
+  max-height: 280px;
+}
+
+.misha-richard {
+  max-height: 650px;
+}
+
+.rokky {
+  height: 140px;
+}
+
+.senya {
+  height: 140px;
 }
 
 .parrots {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width: 1024px) {
-    .pets {
-        padding: 40px 0;
-    }
-
-    .pets__title {
-        font-size: 44px;
-        line-height: 50px;
-        margin-bottom: 40px;
-    }
-
-    .gallery__caption {
-        font-size: 18px;
-        line-height: 24px;
-    }
-    
-    .gallery {
-        /* max-width: 613px; */
-        row-gap: 40px;
-        grid-template-columns: repeat(9, 1fr);
-        grid-template-areas: 
-        "one one one one two two six six six"
-        "three three four four five five six six six";
-    }
-}
-
-@media (max-width: 768px) {
-    .pets {
-        padding: 31px 0;
-    }
-
-    .pets__title {
-        font-size: 30px;
-        line-height: 34px;
-        margin-bottom: 30px;
-        /* padding: 30px; */
-    }
-
-    .gallery {
-        grid-template-columns: unset;
-        grid-template-areas: 
-        "one two"
-        "three four"
-        "five six";
-        /* grid-template-columns: repeat(9, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: 
-        'one one one one one one two two'
-        'three three three three four four four four four'
-        'five five five five six six six six'; */
-    }
-}
-
-
-@media (max-width: 480px) {
-    .pets {
-        padding: 25px 0;
-    }
-
-    .pets__title {
-        font-size: 20px;
-        line-height: 24px;
-        margin-bottom: 20px;
-    }
-
-    .gallery__caption {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    .gallery {
-        grid-template-areas:
-        "one"
-        "two"
-        "three"
-        "four"
-        "five"
-        "six";
-        gap: 20px;
-    }
-}
+/*# sourceMappingURL=pets.css.map */
