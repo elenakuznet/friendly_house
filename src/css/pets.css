@@ -4,7 +4,6 @@
 .pets__title {
   margin-bottom: 50px;
 }
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -59,23 +58,23 @@
 }
 
 .pinki {
-  max-height: 280px;
+  height: 280px;
 }
 
 .murzik {
-  max-height: 280px;
+  height: 280px;
 }
 
 .jack {
-  max-height: 280px;
+  height: 280px;
 }
 
 .jerry {
-  max-height: 280px;
+  height: 280px;
 }
 
 .misha-richard {
-  max-height: 650px;
+  height: 650px;
 }
 
 .rokky {
@@ -83,7 +82,7 @@
 }
 
 .senya {
-  height: 140px;
+  /* height: 140px; */
 }
 
 .parrots {

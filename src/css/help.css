@@ -89,6 +89,13 @@
     ' dog_1 dog_1 dog_2 dog_2 dog_2 dog_2';
     gap: 20px;
     align-items: stretch;
+    min-width: 580px;
+}
+
+.help__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .help__image--01 {
