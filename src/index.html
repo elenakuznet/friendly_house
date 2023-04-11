@@ -73,7 +73,15 @@
                     <button class="banner__link button" aria-label="жми на лапку чтобы помочь">
                         <img src="image/banner/banner_link.svg" alt="кнопка в виде лапки" width="180" height="155">
                     </button>
-                    <img class="banner__image" src="image/banner/sara.jpg" alt="Фото собаки" width="580" height="580">
+                    <picture class="banner__image">
+                        <source media="(max-width: 460px)" srcset="image/banner/sara-mob.avif" type="image/avif">
+                        <source media="(max-width: 460px)" srcset="image/banner/sara-mob.webp" type="image/webp">
+                        <source media="(max-width: 460px)" srcset="image/banner/sara-mob.jpg" type="image/jpg">
+                        <source srcset="image/banner/sara.avif" type="image/avif">
+                        <source srcset="image/banner/sara.webp" type="image/webp">
+                        <img src="image/banner/sara.jpg" alt="Фото собаки" width="580" height="580">
+                    </picture>
+                    
                 </div>
             </div>
         </section>
@@ -148,7 +156,7 @@
                                 </div>
                             </li>
                             <li class="project__item">
-                                <picture >
+                                <picture>
                                     <source srcset="image/project/project_4.avif" type="image/avif">
                                     <source srcset="image/project/project_4.webp" type="image/webp">
                                     <img class="project__image" src="image/project/project_4.jpg" alt="фото собаки" width="280" height="180">
@@ -169,18 +177,114 @@
                     <div class="more">
                         <p class="more__title">Больше проектов</p>
                         <ul class="more__list">
-                            <li class="more__item"><a href=""><img class="more__image" src="image/more/image1.jpg" alt="собака" width="80" height="70"></a></li>
-                            <li class="more__item"><a href=""><img class="more__image" src="image/more/image2.jpg" alt="собака" width="80" height="70"></a></li>
-                            <li class="more__item"><a href=""><img class="more__image" src="image/more/image3.jpg" alt="кролик" width="80" height="70"></a></li>
-                            <li class="more__item"><a href=""><img class="more__image" src="image/more/image4.jpg" alt="собака" width="80" height="70"></a></li>
-                            <li class="more__item"><a href=""><img class="more__image" src="image/more/image5.jpg" alt="собака" width="80" height="70"></a></li>
-                            <li class="more__item"><a href=""><img class="more__image" src="image/more/image6.jpg" alt="попугай" width="80" height="70"></a></li>
-                            <li class="more__item"><a href=""><img class="more__image" src="image/more/image7.jpg" alt="девочка и собака" width="80" height="70"></a></li>
-                            <li class="more__item"><a href=""><img class="more__image" src="image/more/image8.jpg" alt="попугай" width="80" height="70"></a></li>
-                            <li class="more__item"><a href=""><img class="more__image" src="image/more/image9.jpg" alt="попугай" width="80" height="70"></a></li>
-                            <li class="more__item"><a href=""><img class="more__image" src="image/more/image10.jpg" alt="собака" width="80" height="70"></a></li>
-                            <li class="more__item"><a href=""><img class="more__image" src="image/more/image11.jpg" alt="девушка и собака" width="80" height="70"></a></li>
-                            <li class="more__item"><a href=""><img class="more__image" src="image/more/image12.jpg" alt="кролик" width="80" height="70"></a></li>
+                            <li class="more__item">
+                                <a href="">
+                                    <picture>
+                                        <source srcset="image/more/image1.avif" type="image/avif">
+                                        <source srcset="image/more/image1.webp" type="image/webp">
+                                        <img class="more__image" src="image/more/image1.jpg" alt="собака" width="80" height="70">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="more__item">
+                                <a href="">
+                                    <picture>
+                                        <source srcset="image/more/image2.avif" type="image/avif">
+                                        <source srcset="image/more/image2.webp" type="image/webp">
+                                        <img class="more__image" src="image/more/image2.jpg" alt="собака" width="80" height="70">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="more__item">
+                                <a href="">
+                                    <picture>
+                                        <source srcset="image/more/image3.avif" type="image/avif">
+                                        <source srcset="image/more/image3.webp" type="image/webp">
+                                        <img class="more__image" src="image/more/image3.jpg" alt="кролик" width="80" height="70">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="more__item">
+                                <a href="">
+                                    <picture>
+                                        <source srcset="image/more/image4.avif" type="image/avif">
+                                        <source srcset="image/more/image4.webp" type="image/webp">
+                                        <img class="more__image" src="image/more/image4.jpg" alt="собака" width="80" height="70">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="more__item">
+                                <a href="">
+                                    <picture>
+                                        <source srcset="image/more/image5.avif" type="image/avif">
+                                        <source srcset="image/more/image5.webp" type="image/webp">
+                                        <img class="more__image" src="image/more/image5.jpg" alt="собака" width="80" height="70">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="more__item">
+                                <a href="">
+                                    <picture>
+                                        <source srcset="image/more/image6.avif" type="image/avif">
+                                        <source srcset="image/more/image6.webp" type="image/webp">
+                                        <img class="more__image" src="image/more/image6.jpg" alt="попугай" width="80" height="70">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="more__item">
+                                <a href="">
+                                    <picture>
+                                        <source srcset="image/more/image7.avif" type="image/avif">
+                                        <source srcset="image/more/image7.webp" type="image/webp">
+                                        <img class="more__image" src="image/more/image7.jpg" alt="девочка и собака" width="80" height="70">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="more__item">
+                                <a href="">
+                                    <picture>
+                                        <source srcset="image/more/image8.avif" type="image/avif">
+                                        <source srcset="image/more/image8.webp" type="image/webp">
+                                        <img class="more__image" src="image/more/image8.jpg" alt="попугай" width="80" height="70">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="more__item">
+                                <a href="">
+                                    <picture>
+                                        <source srcset="image/more/image9.avif" type="image/avif">
+                                        <source srcset="image/more/image9.webp" type="image/webp">
+                                        <img class="more__image" src="image/more/image9.jpg" alt="попугай" width="80" height="70">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="more__item">
+                                <a href="">
+                                    <picture>
+                                        <source srcset="image/more/image10.avif" type="image/avif">
+                                        <source srcset="image/more/image10.webp" type="image/webp">
+                                        <img class="more__image" src="image/more/image10.jpg" alt="собака" width="80" height="70">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="more__item">
+                                <a href="">
+                                    <picture>
+                                        <source srcset="image/more/image11.avif" type="image/avif">
+                                        <source srcset="image/more/image11.webp" type="image/webp">
+                                        <img class="more__image" src="image/more/image11.jpg" alt="девушка и собака" width="80" height="70">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="more__item">
+                                <a href="">
+                                    <picture>
+                                        <source srcset="image/more/image12.avif" type="image/avif">
+                                        <source srcset="image/more/image12.webp" type="image/webp">
+                                        <img class="more__image" src="image/more/image12.jpg" alt="кролик" width="80" height="70">
+                                    </picture>
+                                </a>
+                            </li>
                         </ul>
                         <a class="more__link" href="#">Увидеть все <img src="image/project/arrow-right.svg" alt="" width="29" height="29"></a>
                     </div>
@@ -224,6 +328,9 @@
                         <div class="help__row">
                             <div class="help__figure">
                                 <picture class="help__image--03">
+                                    <source media="(max-width: 460px)" srcset="image/help/vol-mob.avif" type="image/avif">
+                                    <source media="(max-width: 460px)" srcset="image/help/vol-mob.webp" type="image/webp">
+                                    <source media="(max-width: 460px)" srcset="image/help/vol-mob.jpg" type="image/jpg">
                                     <source srcset="image/help/vol.avif" type="image/avif">
                                     <source srcset="image/help/vol.webp" type="image/webp">
                                     <img src="image/help/vol.jpg" alt="фото девушки и собаки" width="580" height="349">
@@ -247,9 +354,30 @@
                                 </p>
                             </div>
                             <div class="guardian__galery">
-                                <img class="guardian-01" src="image/help/guardian_01.jpg" alt="фото кота" width="280" height="382">
-                                <img class="guardian-02" src="image/help/guardian_02.jpg" alt="фото кота" width="280" height="181">
-                                <img class="guardian-03" src="image/help/guardian_03.jpg" alt="фото парня с собакой" width="280" height="181">
+                                <picture class="guardian-01">
+                                    <source media="(max-width: 460px)" srcset="image/help/guardian_01-mob.avif" type="image/avif">
+                                    <source media="(max-width: 460px)" srcset="image/help/guardian_01-mob.webp" type="image/webp">
+                                    <source media="(max-width: 460px)" srcset="image/help/guardian_01-mob.jpg" type="image/jpg">
+                                    <source srcset="image/help/guardian_01.avif" type="image/avif">
+                                    <source srcset="image/help/guardian_01.webp" type="image/webp">
+                                    <img  src="image/help/guardian_01.jpg" alt="фото кота" width="280" height="382">
+                                </picture>
+                                <picture class="guardian-02">
+                                    <source media="(max-width: 460px)" srcset="image/help/guardian_02-mob.avif" type="image/avif">
+                                    <source media="(max-width: 460px)" srcset="image/help/guardian_02-mob.webp" type="image/webp">
+                                    <source media="(max-width: 460px)" srcset="image/help/guardian_02-mob.jpg" type="image/jpg">
+                                    <source srcset="image/help/guardian_02.avif" type="image/avif">
+                                    <source srcset="image/help/guardian_02.webp" type="image/webp">
+                                    <img src="image/help/guardian_02.jpg" alt="фото кота" width="280" height="181">
+                                </picture>
+                                <picture class="guardian-03">
+                                    <source media="(max-width: 460px)" srcset="image/help/guardian_03-mob.avif" type="image/avif">
+                                    <source media="(max-width: 460px)" srcset="image/help/guardian_03-mob.webp" type="image/webp">
+                                    <source media="(max-width: 460px)" srcset="image/help/guardian_03-mob.jpg" type="image/jpg">
+                                    <source srcset="image/help/guardian_03.avif" type="image/avif">
+                                    <source srcset="image/help/guardian_03.webp" type="image/webp">
+                                    <img src="image/help/guardian_03.jpg" alt="фото парня с собакой" width="280" height="181">
+                                </picture>
                             </div>
                         </div>
                     </li>
