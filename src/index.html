@@ -89,7 +89,11 @@
                             в течении многих лет. Мы заботимся о качестве жизни наших подопечных и осуществляем профессиональный медицинский уход.</p>   
                     </div>
                     <div class="about__picture">
-                        <img class="about__image" src="image/about/about.jpg" alt="фото собаки">
+                        <picture>
+                            <source srcset="image/about/about.avif" type="image/avif">
+                            <source srcset="image/about/about.webp" type="image/webp">
+                            <img class="about__image" src="image/about/about.jpg" alt="фото собаки">
+                        </picture>
                     </div>
                 </div>
                 <a class="about__link" href="">СМИ о нас <img src="image/project/arrow-right.svg"  alt=""></a>
@@ -103,7 +107,12 @@
                     <div class="project__wrapper">
                         <ul class="project__list">
                             <li class="project__item">
-                                <img class="project__image" src="image/project/project_1.jpg" alt="фото собаки">
+                                <picture>
+                                    <source srcset="image/project/project_1.avif" type="image/avif">
+                                    <source srcset="image/project/project_1.webp" type="image/webp">
+                                    <img class="project__image" src="image/project/project_1.jpg" alt="фото собаки">
+                                </picture>
+                                
                                 <div class="content">
                                     <h3 class="content__title">Новый дом для животных</h3>
                                     <p class="content__text">Приют появился практически одновременно с созданием Фонда в ...
@@ -112,7 +121,12 @@
                                 </div>
                             </li>
                             <li class="project__item">
-                                <img class="project__image" src="image/project/project_2.jpg" alt="фото собаки">
+                                <picture>
+                                    <source srcset="image/project/project_2.avif" type="image/avif">
+                                    <source srcset="image/project/project_2.webp" type="image/webp">
+                                    <img class="project__image" src="image/project/project_2.jpg" alt="фото собаки">
+                                </picture>
+                                
                                 <div  class="content"><h3 class="content__title">Маленькие модники</h3>
                                     <p class="content__text">Наши котики и собачки тоже любят наряжаться, чтобы красиво выглядеть ...
                                     </p>
@@ -120,7 +134,12 @@
                                 </div>
                             </li>
                             <li class="project__item">
-                                <img class="project__image" src="image/project/project_3.jpg" alt="фото девушки и собаки">
+                                <picture>
+                                    <source srcset="image/project/project_3.avif" type="image/avif">
+                                    <source srcset="image/project/project_3.webp" type="image/webp">
+                                    <img class="project__image" src="image/project/project_3.jpg" alt="фото девушки и собаки">
+                                </picture>
+                                
                                 <div  class="content">
                                     <h3 class="content__title">Поиграй со мной!</h3>
                                     <p class="content__text">Новая программа нашего приюта “Поиграй со мной”. Приводите своих ...
@@ -129,7 +148,11 @@
                                 </div>
                             </li>
                             <li class="project__item">
-                                <img class="project__image" src="image/project/project_4.jpg" alt="фото собаки">
+                                <picture >
+                                    <source srcset="image/project/project_1.avif" type="image/avif">
+                                    <source srcset="image/project/project_1.webp" type="image/webp">
+                                    <img class="project__image" src="image/project/project_4.jpg" alt="фото собаки">
+                                </picture>
                                 <div class="content">
                                     <h3 class="content__title">Конкурс “Лучшее фото”</h3>
                                     <p class="content__text">Приходи к нам в Friendly House и делай классные фотографии наших животн...
@@ -178,9 +201,21 @@
                                 а также, на обустройство территории, где обитают наши маленькие питомцы.</p>
                         </div>
                         <div class="help__gallery">
-                            <img class="help__image help__image--01" src="image/help/rabit.jpg" alt="фото кролика">
-                            <img class="help__image help__image--02" src="image/help/dog_2.jpg" alt="фото собаки">
-                            <img class="help__image help__image--03" src="image/help/dog_1.jpg" alt="фото собаки">
+                            <picture class="help__image--01">
+                                <source srcset="image/help/rabit.avif" type="image/avif">
+                                <source srcset="image/help/rabit.webp" type="image/webp">
+                                <img class="help__image " src="image/help/rabit.jpg" alt="фото кролика">
+                            </picture>
+                            <picture class="help__image--02">
+                                <source srcset="image/help/dog_2.avif" type="image/avif">
+                                <source srcset="image/help/dog_2.webp" type="image/webp">
+                                <img class="help__image " src="image/help/dog_2.jpg" alt="фото собаки">
+                            </picture>
+                            <picture class="help__image--03">
+                                <source srcset="image/help/dog_1.avif" type="image/avif">
+                                <source srcset="image/help/dog_1.webp" type="image/webp">
+                                <img class="help__image " src="image/help/dog_1.jpg" alt="фото собаки">
+                            </picture>
                         </div>
                         
                     </li>
@@ -188,15 +223,18 @@
                         <h3 class="item__title item__title_second">Стать волонером</h3>
                         <div class="help__row">
                             <div class="help__figure">
-                                <img src="image/help/vol.jpg" alt="фото девушки и собаки">
+                                <picture class="help__image--03">
+                                    <source srcset="image/help/vol.avif" type="image/avif">
+                                    <source srcset="image/help/vol.webp" type="image/webp">
+                                    <img src="image/help/vol.jpg" alt="фото девушки и собаки">
+                                </picture>
                             </div>
                             <div class="second__text">
                                 <p class="item__text">Наш приют "Friendly House" привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи и набирающего популярность интеллектуального волонтерства до помощи руками.</p> 
                                 <p>Нам всегда нужна помощь с выгулом подопечных, уборкой помещений, привезти в приют корм или медикаменты, помочь с перевозкой животных в клиники, забрать и привезти вещи 
                             и много всего другого. Мы всегда рады любой помощи, присоединяйтесь к нашей дружной команде! :)</p>
                             </div>
-                        </div>
-                        
+                        </div>       
                     </li>
                     <li class="item third guardian">
                         <div class="guardian__wrapper">
