@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preload" href="fonts/HelveticaNeueCyr-Light.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/HelveticaNeueCyr-Light.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/HelveticaNeueCyr-Roman.woff2" as="font" type="font/woff2" crossorigin>
@@ -13,10 +14,22 @@
     <link rel="preload" href="fonts/Comfortaa-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Comfortaa-Regular.woff" as="font" type="font/woff" crossorigin>
     <link rel="stylesheet" href="css/index.css">
-    <script defer src="js/jquery-3.6.3.min.js"></script>
-    <script defer src="js/jquery-ui.min.js"></script>
-    <script defer src="js/inert.js"></script>
-    <script defer src="js/script.js"></script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const createLink = url => {
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = url;
+                document.head.append('link');
+            };
+            createLink('css/index.css');
+        })
+    </script> -->
+
+    <!-- <script defer src="libs/jquery-3.6.3.min.js"></script>
+    <script defer src="libs/jquery-ui.min.js"></script>
+    <script defer src="libs/inert.js"></script> -->
+    <script defer src="js/index.min.js"></script>
     <title>Friendly House</title>
 </head>
 <body>
@@ -213,35 +226,65 @@
                 <h2 class="pets__title section__title">Наши питомцы</h2>
                 <div class="gallery">
                     <figure class="gallery__figure one">
-                        <img class="gallery__image pinki" src="image/project/pinki.jpg" alt="Твинки и Пинки">
+                        <picture>
+                            <source srcset="image/pets/pinki.avif" type="image/avif">
+                            <source srcset="image/pets/pinki.webp" type="image/webp">
+                            <img class="gallery__image pinki" src="image/pets/pinki.jpg" alt="Твинки и Пинки">
+                        </picture>
+                        
                         <figcaption class="gallery__caption">Твинки и Пинки, 2 месяца</figcaption>
                     </figure>
 
                     <figure class="gallery__figure two">
-                        <img class="gallery__image murzik" src="image/project/murzik-1.jpg" alt="Мурзик">
+                        <picture>
+                            <source srcset="image/pets/murzik-1.avif" type="image/avif">
+                            <source srcset="image/pets/murzik-1.webp" type="image/webp">
+                            <img class="gallery__image murzik" src="image/pets/murzik-1.jpg" alt="Мурзик">
+                        </picture>
+                        
                         <figcaption class="gallery__caption">Мурзик, 6 месяцев</figcaption>
                     </figure>
 
                     <figure class="gallery__figure three">
-                        <img class="gallery__image jack" src="image/project/jack.jpg" alt="Джек">
+                        <picture>
+                            <source srcset="image/pets/jack.avif" type="image/avif">
+                            <source srcset="image/pets/jack.webp" type="image/webp">
+                            <img class="gallery__image jack" src="image/pets/jack.jpg" alt="Джек">
+                        </picture>
                         <figcaption class="gallery__caption">Джек, 1 год</figcaption>
                     </figure>
 
                     <figure class="gallery__figure four">
-                        <img class="gallery__image jerry" src="image/project/jerry-1.jpg" alt="Джерри">
+                        <picture>
+                            <source srcset="image/pets/jerry-1.avif" type="image/avif">
+                            <source srcset="image/pets/jerry-1.webp" type="image/webp">
+                            <img class="gallery__image jerry" src="image/pets/jerry-1.jpg" alt="Джерри">
+                        </picture>
                         <figcaption class="gallery__caption">Джерри, 3 недели</figcaption>
                     </figure>
 
                     <figure class="gallery__figure five">
                         <div class="parrots">
-                            <img class="gallery__image rokky" src="image/project/rokky.jpg" alt="Рокки">
-                            <img class="gallery__image senya" src="image/project/senya.jpg" alt="Сеня">  
+                            <picture>
+                                <source srcset="image/pets/rokky.avif" type="image/avif">
+                                <source srcset="image/pets/rokky.webp" type="image/webp">
+                                <img class="gallery__image rokky" src="image/pets/rokky.jpg" alt="Рокки">
+                            </picture>
+                            <picture>
+                                <source srcset="image/pets/senya.avif" type="image/avif">
+                                <source srcset="image/pets/senya.webp" type="image/webp">
+                                <img class="gallery__image senya" src="image/pets/senya.jpg" alt="Сеня">  
+                            </picture>
                         </div>
                         <figcaption class="gallery__caption">Рокки и Сеня, 2 и 3 года</figcaption>
                     </figure>
 
                     <figure class="gallery__figure six">
-                        <img class="gallery__image misha-richard" src="image/project/misha_richard.jpg" alt="Миша (кот) и Ричард (пёс)">
+                        <picture>
+                            <source srcset="image/pets/misha_richard.avif" type="image/avif">
+                            <source srcset="image/pets/misha_richard.webp" type="image/webp">
+                            <img class="gallery__image misha-richard" src="image/pets/misha_richard.jpg" alt="Миша (кот) и Ричард (пёс)">
+                        </picture>
                         <figcaption class="gallery__caption">Миша (кот) и Ричард (пёс), 3 года и 5 лет</figcaption>
                     </figure>
                 </div>
