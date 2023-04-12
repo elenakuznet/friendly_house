@@ -15,6 +15,8 @@ import gulpWebp from 'gulp-webp';
 import gulpAvif from 'gulp-avif';
 import { stream as critical } from 'critical';
 import gulpif from 'gulp-if';
+import autoprefixer from 'gulp-autoprefixer';
+import babel from 'gulp-babel';
 
 
 const prepros = false;
@@ -45,12 +47,13 @@ export const style = () => {
         return gulp
             .src('src/scss/**/*.scss')
             .pipe(gulpif(dev, sourcemaps.init()))
+            .pipe(sass().on('error', sass.logError))
+            .pipe(autoprefixer())
             .pipe(cleanCss({
                 2: {
                     specialComment: 0
                 }
             }))
-            .pipe(sass().on('error', sass.logError))
             .pipe(gulpif(dev, sourcemaps.write('../maps')))
             .pipe(gulp.dest('dist/css'))
             .pipe(browserSync.stream());
@@ -61,6 +64,7 @@ export const style = () => {
         .pipe(gulpCssimport({
             extensions: ['css'],
         }))
+        .pipe(autoprefixer())
         .pipe(cleanCss({
             2: {
                 specialComment: 0
@@ -74,6 +78,10 @@ export const style = () => {
 export const js = () => gulp
     .src([...allJS,'src/js/**/*.js'])
     .pipe(gulpif(dev, sourcemaps.init()))
+    .pipe(babel({
+        presets: ['@babel/preset-env'],
+        ignore: [...allJS, 'src/js/**/*.min.js']
+    }))
     .pipe(terser())
     .pipe(concat('index.min.js'))
     .pipe(gulpif(dev, sourcemaps.write('../maps')))
